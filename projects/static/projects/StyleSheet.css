@@ -1,0 +1,45 @@
+﻿@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Raleway:wght@100&display=swap");
+h1{font-family: 'Otomanopee One', sans-serif; font-size: xxx-large; text-align: center;}
+body{ border: 5px solid rgba(122,198,225,1);
+margin:0px; padding:0px;}
+ul{list-style-type: none; margin: 0px; padding: 0px;
+background-color : rgba(1,137,220,0.75);
+position: fixed; top: 0; width: 100%;right:1px;}
+ol{list-style-type: none; margin: 0px; padding: 0px;
+    background-color : rgba(1,137,220,0.75);
+    }
+li{float:left;font-size:x-large;}
+li a{display: block; padding: 8px; 
+background-color: rgba(1,137,220,0.75); color: white;
+text-decoration:none; border:solid;
+border-right-color: rgba(122,198,225,1);
+border-left-color: rgba(122,198,225,1);
+border-top-color: rgba(122,198,225,1);
+border-bottom-color: rgba(122,198,225,1);
+font-family:"Gill Sans",sans-serif;}
+li a:hover{background-color: rgba(0,9,255,1)}
+li:last-child{border-right: none;}
+a:hover{background-color: rgba(0,9,255,1)}
+p{font-family: 'Raleway', sans-serif; font-size: large; text-align: center; margin-left:300px;margin-right:300px;}
+.urlbox{display: block; padding: 8px; width: 275px; margin: 10px;
+    background-color: rgba(1,137,220,0.75); color: white;
+    text-decoration:none; border:solid;
+    border-right-color: rgba(122,198,225,1);
+    border-left-color: rgba(122,198,225,1);
+    border-top-color: rgba(122,198,225,1);
+    border-bottom-color: rgba(122,198,225,1);
+    font-family:"Gill Sans",sans-serif;
+    text-align: center;
+    }
+
+.projbox{display: block; padding: 8px; width: 275px; margin: 5px;
+    background-color: rgba(1,137,220,0.75); color: white;
+    text-decoration:none; border:solid;
+    border-right-color: rgba(122,198,225,1);
+    border-left-color: rgba(122,198,225,1);
+    border-top-color: rgba(122,198,225,1);
+    border-bottom-color: rgba(122,198,225,1);
+    font-family:'Otomanopee One', sans-serif;
+    text-align: center;}

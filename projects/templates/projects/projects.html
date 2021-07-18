@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+{% extends 'projects/base.html' %}
+{% block content%}
+{%load static%}
+<head>
+    <title>Projects</title>
+    
+</head>
+<body>
+    <br>
+    <h1>Projects</h1>
+    <p>This page will include the various projects I've worked.</p>
+    <br>
+    <p>The code for my projects can be found on my <a href="https://github.com/knedgen?tab=repositories"; target="_blank">github</a></p>
+    <br>
+    
+    <figure style="float: inline-start;">
+        <a href="{% url 'pong' %}"; target="_blank"><h1 style="text-align: left;">Pong Project</h1>
+        <br>
+        <img src="{% static 'projects/pong.jpg'%}"; height="300px"; width="300px";>
+        </a>
+    </figure>
+</body>
+
+{% endblock %}
+
+</html>

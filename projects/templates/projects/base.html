@@ -1,0 +1,22 @@
+<head>
+    <meta charset="utf-8" />
+        {%load static%}
+        <link rel="stylesheet" href="{% static 'projects/StyleSheet.css' %}""{% now u= %}">
+    
+</head>
+<body>
+
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+            <li><a href="{% url 'about' %}" >About</a></li>
+            <li style="float:right"><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    <br>
+    
+</body>
+
+
+
+
+{% block content%} {% endblock%}
