@@ -12,26 +12,29 @@
 
     <h1>Welcome<h1>
     <p>This is my first website made from scratch. I'll be adding my Python and other projects.<p>
-    
+    <br>
         {% for project in allprojects %}
         <ol>
             <li><h3 class="projbox">{{ project.title }}</h3>
                 <p class="projbox">{{ project.description }}</p>
                 <img class="projbox" src="{{ project.image.url }}" width="300px" height="300px">
-                
+
                 {% if project.url %}
                 <a class="urlbox" href="{{ project.url }}" target="_blank">Check it out</a>
             </li>
         </ol>
-    
-   
-</body>
-    
 
 
 {% endif %}
-
 {% endfor %}
+<br><br><br><br><br><br><br><br><br>
+</body>
+
+
+
+
+
+
 
 {% endblock %}
 </html>
