@@ -15,8 +15,8 @@
     <br>
         {% for project in allprojects %}
         <ol>
-            <li><h3 class="projbox">{{ project.title }}</h3>
-                <p class="projbox">{{ project.description }}</p>
+            <li><h3 class="descriptbox">{{ project.title }}</h3>
+                <p class="descriptbox" >{{ project.description }}</p>
                 <img class="projbox" src="{{ project.image.url }}" width="300px" height="300px">
 
                 {% if project.url %}
@@ -28,6 +28,7 @@
 {% endif %}
 {% endfor %}
 <br><br><br><br><br><br><br><br><br>
+
 </body>
 
 
