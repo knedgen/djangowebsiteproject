@@ -29,7 +29,8 @@ urlpatterns = [
     path('projects/spanish/', views.spanish, name='spanish'),
     path('projects/spanish2/', views.spanish2, name='spanish2'),
     path('projects/top10cryptos/', views.cryptos, name='cryptos'),
-    
+    path('udemy/', views.udemy, name='udemy'),
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)

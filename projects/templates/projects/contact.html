@@ -3,20 +3,24 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 {% extends 'projects/base.html' %}
 {% block content%}
+{% load static %}
 <head>
     <meta charset="utf-8" />
     <head>
        <title>Contact</title>
     </head>
+    <br><br>
     <body>
 
-        <h1>Contact Info<h1>
-        <p>Email: knedgen@aol.com<p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/matthew-knedgen-4324798b/" target="_blank">link</a></p>
+        <h1>Contact and other info<h1><br>
+        <h3>Email: knedgen@aol.com<h3><br>
+        <h3><a href="https://www.linkedin.com/in/matthew-knedgen-4324798b/" target="_blank">LinkedIn</a></h3><br>
+        <h3><a href="https://github.com/knedgen" target="_blank">Github</a></h3><br>
+        <h3><a href="{% static 'projects/resume.pdf' %}" target="_blank">Resume</a></h3><br>
 
 
 
-
+<br><br><br><br><br><br>
     </body>
 
 {% endblock%}

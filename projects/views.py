@@ -37,6 +37,9 @@ def about(request):
 def contact(request):
     return render(request,'projects/contact.html')
 
+def udemy(request):
+    return render(request,'projects/udemy.html')
+
 def pong(request):
     return render(request,'projects/pong.html')
 
@@ -71,13 +74,13 @@ def cryptos(request):
     names = []
     for name in soup2.select('.iJjGCS')[8:]:
         names.append(name.text)
-    
+
     #grabs tickers
     symbols = []
     for syms in soup2.select('.gGIpIK')[:]:
         symbols.append(syms.text)
-    
-    
+
+
     prices = []
     for price in soup2.select('div.sc-131di3y-0.cLgOOr')[0:]:
         prices.append(price.text)
@@ -95,5 +98,3 @@ def cryptos(request):
     df = df.set_index([pd.Index(['1', '2', '3', '4', '5', '6', '7', '8','9','10'])])
     allcryptos = df.to_html()
     return HttpResponse(allcryptos)
-    
-    

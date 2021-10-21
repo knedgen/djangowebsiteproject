@@ -7,7 +7,7 @@
 <head>
    <title>About me</title>
 </head>
-<br><br><br>
+<br><br>
   <body>
     <img src="{% static 'projects/msu.jpg' %}" class="picleft">
     <img src="{% static 'projects/sparty.jpg' %}" class="picright">
@@ -20,8 +20,8 @@
     <p>
 
 
-  <p>Since transitioning, I've been learning a plethora of information on Udemy. My primary focus has been learning Python. As my first
-    programming language, I've found it to be very intuitive to learn. What I enjoy most about it is what seems to be endless possibilities
+  <p>Since transitioning, I've been learning a plethora of information on Udemy<a href="{% url 'udemy' %}" target="_blank">(Udemy Courses Here)</a>.
+    My primary focus has been learning Python. As my first programming language, I've found it to be very intuitive to learn. What I enjoy most about it is what seems to be endless possibilities
     with what it can do because of all the libraries it offers. My Python skills have gotten to the point where I am very comfortable
     learning a new library with ease. To make this site I used Django, but also have another portfolio website that uses Flask. I have also learned
     HTML, CSS, Bootstrap, and Javascript. </p>
@@ -29,7 +29,7 @@
     <img src="{% static 'projects/tessa.jpg' %}" class="picright">
   <p>At this time I am looking to land my first position to start my programming career. Until then, I plan on continuing to work
   on new projects to build up my resume. If you would like to see my projects, you can check out my Github profile
-  <a href="https://github.com/knedgen" target="_blank">here</a>.</p>
+  <a href="https://github.com/knedgen" target="_blank">here</a> and my resume <a href="{% static 'projects/resume.pdf' %}" target="_blank">here.</a>.</p>
 
 
   <h1>About my personal life</h1>
@@ -38,6 +38,10 @@
   We have two dogs, Murray and Stormy, along with three cats Captain, Riven, and Sirius.</p>
 
 
+
+  <p>My hobbies and interests include video games, movies/tv, and sports. I've always been a huge gaming nerd ever since I can remember
+  playing Super Mario World when I was just a few years old. For sports, my college team is Michigan State of course! For professional
+  teams I'm a fan of all the Detroit teams, unfortunately that does include the Lions. </p>
   <figure class="picleft">
     <img src="{% static 'projects/dogs.jpg' %}" class="picleft">
     <figcaption class="figleft">Murray(left) and Stormy(right)</figcaption>
@@ -45,13 +49,9 @@
   <figure class="picright">
   <img src="{% static 'projects/cats.png' %}" class="picright">
   <figcaption class="figright">Sirius(left), Riven(middle), and Captain(right)</figcaption>
-</figure>
+  </figure>
 
-  <p>My hobbies and interests include video games, movies/tv, and sports. I've always been a huge gaming nerd ever since I can remember
-  playing Super Mario World when I was just a few years old. For sports, my college team is Michigan State of course! For professional
-  teams I'm a fan of all the Detroit teams, unfortunately that does include the Lions. </p>
-
-<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
 </body>
 
 {% endblock %}
