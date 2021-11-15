@@ -1,4 +1,7 @@
 django
 bs4
 pandas
-sqlite
+requests
+ipython
+lxml
+Pillow
