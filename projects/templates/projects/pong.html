@@ -1,6 +1,5 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-{% extends 'projects/base.html' %}
-{% block content%}
+
 <head>
 
 </head>
@@ -8,7 +7,7 @@
 <body>
 <h1 style="text-align: left;">My Pong Javascript Project</h1>
 <br>
-<p style="text-align: left; margin-left: 5px;" >The code for this project can be found 
+<p style="text-align: left; margin-left: 5px;" >The code for this project can be found
     <a  href="https://github.com/knedgen/javascriptpongproject" target="_blank">here</a></p>
 <title>Pong</title>
 
@@ -62,27 +61,27 @@
             canvasContext = canvas.getContext('2d');
 
             var framesPerSecond = 30;
-            setInterval(function() 
+            setInterval(function()
             { moveEverything();drawEverything();},
             1000/framesPerSecond)
 
             canvas.addEventListener('mousedown', handleMouseClick)
 
-            canvas.addEventListener('mousemove', 
+            canvas.addEventListener('mousemove',
             function(evt) {
                 var mousepos = calculateMousePosition(evt);
                 paddle1y = mousepos.y - (PADDLE_HEIGHT/2);
             })
-            
+
         }
 
         function ballReset(){
             if(player1score >= WINNING_SCORE ||
             player2score >= WINNING_SCORE) {
-            
+
                 showingWinScreen = true;
             }
-        
+
 
 
             ballspeedx = -ballspeedx;
@@ -117,7 +116,7 @@
             bally = bally + ballspeedy;
 
             if (ballx < 0) {
-                if(bally > paddle1y && 
+                if(bally > paddle1y &&
                 bally < paddle1y+PADDLE_HEIGHT){
                     ballspeedx = -ballspeedx;
                     var deltaY = bally
@@ -129,11 +128,11 @@
                 }
 
 
-            
+
             }
-            
+
             if (ballx > canvas.width - 5) {
-                if(bally > paddle2y && 
+                if(bally > paddle2y &&
                 bally < paddle2y+PADDLE_HEIGHT){
                     ballspeedx = -ballspeedx;
                     var deltaY = bally
@@ -143,23 +142,23 @@
                     player1score ++; //most be before ball reset for win
                     ballReset();
                 }
-                
+
             }
-            
-        
+
+
             if (bally < 0) {
                 ballspeedy = -ballspeedy;
             }
             if (bally > canvas.height) {
                 ballspeedy = -ballspeedy;
             }
-            
+
         }
-            
+
 
 
         function drawEverything() {
-            
+
             //adds a grey trim
             colorRect(0,0,canvas.width,canvas.height,'gray');
 
@@ -168,15 +167,15 @@
 
             if (showingWinScreen) {
                 canvasContext.fillStyle = 'white';
-                
+
                 if(player1score == WINNING_SCORE) {
-                    
+
                 canvasContext.fillText("Player 1 wins!", 350, 200);
                 } else if (player2score == WINNING_SCORE){
                 canvasContext.fillText("Player 2 wins!", 350, 200);
                 }
                 canvasContext.fillText("Click to continue", 350, 500);
-                
+
                 return;
             }
 
@@ -200,7 +199,7 @@
         function colorRect(leftx,topy,width,height, drawcolor) {
             canvasContext.fillStyle = drawcolor;
             canvasContext.fillRect(leftx,topy,width,height);
-            
+
 
         }
         //creates circle objects
@@ -214,7 +213,6 @@
     </script>
 
 </body>
-{% endblock %}
+
 
 </html>
-
